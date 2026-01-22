@@ -1,0 +1,13 @@
+name: CI Checks
+
+on:
+  pull_request:
+    types: [opened, reopened, edited, assigned, unassigned, synchronize, ready_for_review]
+
+jobs:
+  ci-checks:
+    uses: roharvier/cicd-workflows/.github/workflows/global.yml@main
+    secrets: inherit
+    permissions:
+      pull-requests: read
+      contents: read
