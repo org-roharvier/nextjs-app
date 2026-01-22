@@ -11,3 +11,5 @@ jobs:
     permissions:
       pull-requests: read
       contents: read
+    with:
+      enable-require-assignee: false
