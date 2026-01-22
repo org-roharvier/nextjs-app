@@ -22,6 +22,7 @@ export default function RootLayout({
 }: Readonly<{
     children: React.ReactNode;
 }>) {
+    console.log('layout');
     return (
         <html lang='en'>
             <body className={`${geistSans.variable} ${geistMono.variable}`}>
@@ -30,5 +31,3 @@ export default function RootLayout({
         </html>
     );
 }
-
-// test romain
