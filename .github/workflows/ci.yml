@@ -2,14 +2,10 @@ name: CI
 
 on:
   pull_request:
-    types: [opened, synchronize, reopened, edited, assigned, unassigned]
+    types: [opened, synchronize, reopened, edited, assigned, unassigned, labeled, unlabeled]
 
 jobs:
   ci-checks:
-    uses: org-roharvier/cicd-workflows-claude/.github/workflows/ci.yml@v1
+    uses: org-roharvier/cicd-workflows-claude/.github/workflows/ci.yml@main
     with:
-      enable-assignee-check: true
-      enable-conventional-commits: true
-      assignee-fail-on-missing: true
-      conventional-commits-check-pr-title: true
-      conventional-commits-check-commits: true
+      enable-label-check: true

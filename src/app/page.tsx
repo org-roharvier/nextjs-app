@@ -17,6 +17,8 @@ export default function Home() {
                 <div>2</div>
                 <div>3</div>
                 <div className={styles.intro}>
+                    <div>TESTA</div>
+                    <div>TESTBOO</div>
                     <h1>To get started, edit the page.tsx file.</h1>
                     <p>
                         Looking for a starting point or more instructions? Head
