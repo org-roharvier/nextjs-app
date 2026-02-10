@@ -13,6 +13,9 @@ export default function Home() {
                     height={20}
                     priority
                 />
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
                 <div className={styles.intro}>
                     <h1>To get started, edit the page.tsx file.</h1>
                     <p>
