@@ -6,7 +6,7 @@ on:
 
 jobs:
   ci-checks:
-    uses: org-roharvier/cicd-workflows-claude/.github/workflows/ci.yml@v1
+    uses: org-roharvier/cicd-workflows-claude/.github/workflows/ci.yml@v1.0.0
     with:
       enable-assignee-check: true
       enable-conventional-commits: true
